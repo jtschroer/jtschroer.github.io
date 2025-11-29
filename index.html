@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Tyler Schroer | Data Analyst Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <meta name="robots" content="noindex, nofollow, noarchive">
     <meta name="googlebot" content="noindex, nofollow">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 <style>
@@ -36,7 +36,7 @@
 
 <body class="bg-gray-950 text-gray-200 font-sans">
     
-<section class="py-20 md:py-32 bg-blue-950 border-b-4 border-amber-500">
+    <section class="py-16 md:py-24 bg-blue-950 border-b-4 border-amber-500">
         <div class="container mx-auto px-6 text-center text-white">
             
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-widest uppercase">
@@ -62,6 +62,10 @@
                     <span>LinkedIn</span>
                 </a>
 
+                <a href="https://github.com/jtschroer" target="_blank" class="text-gray-200 hover:text-amber-400 font-bold transition duration-300 py-3 px-2 flex items-center space-x-2">
+                    <i class="fab fa-github text-xl"></i>
+                    <span>GitHub</span>
+                </a>
             </div>
         </div>
     </section>
@@ -72,94 +76,180 @@
             
             <div class="flex flex-wrap justify-center gap-4 max-w-7xl mx-auto">
                 
-<div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center">
-        <img src="imgs/icon_pbi.png" alt="Power BI Logo" class="w-12 h-12 mx-auto mb-2">
-        <p class="text-base font-semibold text-gray-200 mt-1">Power BI</p>
-        <p class="text-xs text-amber-400">Modeling, Advanced DAX, Visualization</p>
-    </div>
+                <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
+                    <img src="imgs/icon_pbi.png" alt="Power BI Logo" class="w-12 h-12 mx-auto mb-2">
+                    <p class="text-base font-semibold text-gray-200 mt-1">Power BI</p>
+                    <p class="text-xs text-amber-400">Modeling & DAX</p>
+                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                        Built interactive dashboards and KPIs for finance and HR projects.
+                    </span>
+                </div>
 
-    <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center">
-        <img src="imgs/icon_tabl.png" alt="Tableau Logo" class="w-12 h-12 mx-auto mb-2">
-        <p class="text-base font-semibold text-gray-200 mt-1">Tableau</p>
-        <p class="text-xs text-amber-400">Dashboard Design, Data Storytelling</p>
-    </div>
+                <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
+                    <img src="imgs/icon_tabl.png" alt="Tableau Logo" class="w-12 h-12 mx-auto mb-2">
+                    <p class="text-base font-semibold text-gray-200 mt-1">Tableau</p>
+                    <p class="text-xs text-amber-400">Dashboards & Storytelling</p>
+                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                        Created visual stories and executive dashboards for marketing and sales data.
+                    </span>
+                </div>
 
-    <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center">
-        <img src="imgs/icon_sql.png" alt="SQL Logo" class="w-12 h-12 mx-auto mb-2">
-        <p class="text-base font-semibold text-gray-200 mt-1">SQL</p>
-        <p class="text-xs text-amber-400">Complex Querying, Data Modeling, ETL</p>
-    </div>
-    
-    <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center">
-        <img src="imgs/icon_excel.png" alt="Excel Logo" class="w-12 h-12 mx-auto mb-2">
-        <p class="text-base font-semibold text-gray-200 mt-1">Excel</p>
-        <p class="text-xs text-amber-400">Formulas, Lookups, Pivot Tables</p>
-    </div>
+                <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
+                    <img src="imgs/icon_sql.png" alt="SQL Logo" class="w-12 h-12 mx-auto mb-2">
+                    <p class="text-base font-semibold text-gray-200 mt-1">SQL</p>
+                    <p class="text-xs text-amber-400">ETL & Queries</p>
+                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                        Optimized complex queries and data pipelines using window functions, CTEs, and indexing.
+                    </span>
+                </div>
 
-    <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center">
-        <img src="imgs/icon_vba.png" alt="VBA Logo" class="w-12 h-12 mx-auto mb-2">
-        <p class="text-base font-semibold text-gray-200 mt-1">VBA</p>
-        <p class="text-xs text-amber-400">Macros, Forms, Controls</p>
-    </div>
-   
-    <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center">
-        <img src="imgs/icon_python.png" alt="Python Logo" class="w-12 h-12 mx-auto mb-2">
-        <p class="text-base font-semibold text-gray-200 mt-1">Python</p>
-        <p class="text-xs text-amber-400">Pandas, Automation</p>
-    </div>
+                <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
+                    <img src="imgs/icon_excel.png" alt="Excel Logo" class="w-12 h-12 mx-auto mb-2">
+                    <p class="text-base font-semibold text-gray-200 mt-1">Excel</p>
+                    <p class="text-xs text-amber-400">Analysis & Pivot Tables</p>
+                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                        Built automated financial models and dashboards with formulas and pivot tables.
+                    </span>
+                </div>
 
-    <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center">
-        <img src="imgs/icon_azure.png" alt="Azure Logo" class="w-12 h-12 mx-auto mb-2">
-        <p class="text-base font-semibold text-gray-200 mt-1">Azure</p>
-        <p class="text-xs text-amber-400">Synapse, Data Lake, Cloud Services</p>
-    </div>
+                <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
+                    <img src="imgs/icon_vba.png" alt="VBA Logo" class="w-12 h-12 mx-auto mb-2">
+                    <p class="text-base font-semibold text-gray-200 mt-1">VBA</p>
+                    <p class="text-xs text-amber-400">Macros & Automation</p>
+                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                        Developed macros, automated repetitive tasks, and built interactive forms.
+                    </span>
+                </div>
 
-    <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center">
-        <img src="imgs/icon_pa.png" alt="Power Automate Logo" class="w-12 h-12 mx-auto mb-2">
-        <p class="text-base font-semibold text-gray-200 mt-1">Power Automate</p>
-        <p class="text-xs text-amber-400">Workflows, RPA</p>
-    </div>
-    
+                <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
+                    <img src="imgs/icon_python.png" alt="Python Logo" class="w-12 h-12 mx-auto mb-2">
+                    <p class="text-base font-semibold text-gray-200 mt-1">Python</p>
+                    <p class="text-xs text-amber-400">Data & Automation</p>
+                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                        Automated data cleaning, transformation, and reporting using pandas and scripts.
+                    </span>
+                </div>
+
+                <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
+                    <img src="imgs/icon_azure.png" alt="Azure Logo" class="w-12 h-12 mx-auto mb-2">
+                    <p class="text-base font-semibold text-gray-200 mt-1">Azure</p>
+                    <p class="text-xs text-amber-400">Cloud & Data</p>
+                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                        Deployed data pipelines and dashboards in Synapse, Data Lake, and other Azure services.
+                    </span>
+                </div>
+
+                <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
+                    <img src="imgs/icon_pa.png" alt="Power Automate Logo" class="w-12 h-12 mx-auto mb-2">
+                    <p class="text-base font-semibold text-gray-200 mt-1">Power Automate</p>
+                    <p class="text-xs text-amber-400">RPA & Workflows</p>
+                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+                        Built automated workflows and robotic process automation for business processes.
+                    </span>
+                </div>
             </div>
-            
         </div>
     </section>
 
 <section id="projects" class="py-16 md:py-24 bg-gray-950">
     <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-16 text-white">Featured Projects</h2>
-        
-        <div class="flex justify-start gap-10 mx-auto overflow-x-auto py-6 px-8">
-            
-            <a href="projects/tableau_p01.html" class="block p-6 rounded-xl bg-gray-800 border border-amber-700/50 card-glow group flex-shrink-0 w-96">
-                                <img src="projects/tableau_p01.png" alt="Tableau Visualization" class="rounded-lg mb-4 w-full h-48 object-contain border border-amber-300">
-                <h3 class="text-2xl font-bold text-gray-200 group-hover:text-amber-400 transition duration-300">IBM Employee Attrition Dashboard</h3>
-                <p class="text-sm text-amber-400 mb-4">Tableau</p>
-                <p class="text-gray-400 text-sm">A Tableau dashboard analyzing employee attrition trends, segmented by department, age group, job satisfaction, and education field.</p>
-            </a>
+        <h2 class="text-4xl font-bold text-center mb-12 text-white">Featured Projects</h2>
 
-            <div class="block p-6 rounded-xl bg-gray-800 border border-gray-600/50 opacity-50 cursor-default flex-shrink-0 w-96">
-                                <img src="imgs/coming_soon.png" alt="Power BI Dashboard" class="rounded-lg mb-4 w-full h-48 object-contain border border-gray-500">
-                <h3 class="text-2xl font-bold text-gray-500 transition duration-300">Enterprise Financial Performance Model</h3>
-                <p class="text-sm text-gray-500 mb-2">Power BI</p>
-                <p class="text-sm font-semibold text-amber-400 mb-4">Expected launch: December 2025.</p>
-                <p class="text-gray-500 text-sm">[Coming Soon] This project focuses on high-performance Star Schema modeling and advanced DAX implementation to track financial KPIs, Year-over-Year variance, and complex inventory movement.</p>
-            </div>
+        <!-- ================= MODALS ================= -->
+        <!-- IBM Employee Attrition Dashboard Modal -->
+        <div id="ibmModal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
+            <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+                <button onclick="closeModal('ibmModal')" class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">&times;</button>
+                <span class="bg-amber-500 text-gray-900 px-3 py-1 rounded-full font-bold text-sm inline-block mb-3">Tableau</span>
+                <h2 class="text-3xl font-bold mb-2 text-white">IBM Employee Attrition Dashboard</h2>
+                <p class="text-white mb-4">Identifies high-risk employee segments and key retention drivers using interactive HR data analysis.</p>
+                <img src="projects/tableau_p01.png" alt="Dashboard Screenshot" class="rounded-lg mb-6 w-full h-auto border border-amber-300 shadow-lg max-h-[80vh] object-contain">
+                <h3 class="text-lg font-semibold mb-2 text-gray-200">Key Insights</h3>
+                <ul class="list-disc ml-6 mb-6 text-gray-300">
+                    <li>R&D department has the highest attrition (<span class="font-bold text-white">56%</span>).</li>
+                    <li>Employees aged 25–35 account for the largest turnover.</li>
+                    <li>Low job satisfaction roles show higher attrition risk.</li>
+                </ul>
+                <a href="https://github.com/jtschroer/Maven_Challenge_2025_11" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                    View Full Project on GitHub
+                </a>
+            </div>
+        </div>
 
-            <div class="block p-6 rounded-xl bg-gray-800 border border-gray-600/50 opacity-50 cursor-default flex-shrink-0 w-96">
-                                <img src="imgs/coming_soon.png" alt="SQL Optimization" class="rounded-lg mb-4 w-full h-48 object-contain border border-gray-500">
-                <h3 class="text-2xl font-bold text-gray-500 transition duration-300">Data Pipeline Optimization Case Study</h3>
-                <p class="text-sm text-gray-500 mb-2">Advanced SQL / Python</p>
-                <p class="text-sm font-semibold text-amber-400 mb-4">Expected launch: January 2026.</p>
-                <p class="text-gray-500 text-sm">[Coming Soon] A technical case study demonstrating performance tuning using SQL Window Functions and CTEs, integrated with a Python ETL script for data validation and pipeline automation.</p>
-            </div>
+        <!-- ================= PROJECT CARDS ================= -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
-        </div>
-        <div class="text-center mt-12">
-             <p class="text-lg text-gray-400">Click a project to see detailed descriptions, insights, and static screenshots.</p>
-        </div>
-    </div>
+    <!-- IBM Employee Attrition Dashboard Card -->
+    <div onclick="openModal('ibmModal')" class="cursor-pointer block p-4 rounded-xl bg-gray-800 border border-amber-700/50 card-glow flex flex-col h-[450px] w-full">
+        <!-- Badges container -->
+        <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">Tableau</span>
+        </div>
+
+        <img src="projects/tableau_p01.png" alt="Tableau Visualization" class="rounded-lg mb-4 w-full h-48 object-contain border border-amber-300">
+
+        <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
+            <h3 class="text-2xl font-bold text-gray-200 transition duration-300 leading-snug">IBM Employee Attrition Dashboard</h3>
+            <p class="text-gray-400 text-sm line-clamp-3">Identifies high-risk employee segments and key retention drivers using interactive HR data analysis.</p>
+        </div>
+    </div>
+
+    <!-- Coming Soon Card 1 -->
+    <div class="relative block p-4 rounded-xl bg-gray-800 border border-gray-600/50 opacity-50 cursor-default flex flex-col h-[450px] w-full">
+        <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">Power BI</span>
+        </div>
+
+        <img src="imgs/coming_soon.png" alt="Power BI Dashboard" class="rounded-lg w-full h-48 object-cover border border-gray-500">
+
+        <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
+            <h3 class="text-2xl font-bold text-gray-500 leading-snug">Enterprise Financial Performance Model</h3>
+            <p class="text-gray-400 text-sm line-clamp-3">High-performance Star Schema modeling and advanced DAX tracking KPIs, YoY variance, and inventory movement.</p>
+        </div>
+    </div>
+
+    <div class="relative block p-4 rounded-xl bg-gray-800 border border-gray-600/50 opacity-50 cursor-default flex flex-col h-[450px] w-full">
+        <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">Python</span>
+	    <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">SQL</span>
+        </div>
+
+        <img src="imgs/coming_soon.png" alt="SQL Optimization" class="rounded-lg w-full h-48 object-cover border border-gray-500">
+
+        <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
+            <h3 class="text-2xl font-bold text-gray-500 leading-snug">Data Pipeline Optimization Case Study</h3>
+            <p class="text-gray-400 text-sm line-clamp-3">Performance tuning using SQL Window Functions and CTEs, integrated with Python ETL for validation and automation.</p>
+        </div>
+    </div>
+
+    <!-- Coming Soon Card
+    <div class="relative block p-4 rounded-xl bg-gray-800 border border-gray-600/50 opacity-50 cursor-default flex flex-col h-[450px] w-full">
+        <div class="flex flex-wrap gap-2 mb-3">
+            <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">Python</span>
+	    <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">SQL</span>
+        </div>
+
+        <img src="imgs/coming_soon.png" alt="SQL Optimization" class="rounded-lg w-full h-48 object-cover border border-gray-500">
+
+        <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
+            <h3 class="text-2xl font-bold text-gray-500 leading-snug">Data Pipeline Optimization Case Study</h3>
+            <p class="text-gray-400 text-sm line-clamp-3">Performance tuning using SQL Window Functions and CTEs, integrated with Python ETL for validation and automation.</p>
+        </div>
+    </div>
+    Coming Soon Card -->
+
+
+</div>
+
+
+
+        <!-- Info text -->
+        <div class="text-center mt-8">
+            <p class="text-lg text-gray-400">Click a project to see detailed descriptions, insights, and static screenshots.</p>
+        </div>
+    </div>
 </section>
+
 
     <footer class="bg-gray-800 border-t-4 border-amber-500 py-8">
         <div class="container mx-auto px-6 text-center">
@@ -167,6 +257,30 @@
             <p class="text-gray-400 text-sm mt-2">Built with HTML & Tailwind CSS.</p>
         </div>
     </footer>
+
+    <script>
+    // --- Modal Functions ---
+    function openModal(modalId) {
+        document.getElementById(modalId).classList.remove('hidden');
+        // Hide scrollbar on body when modal is open (Prevents scrolling background)
+        document.body.style.overflow = 'hidden'; 
+    }
+    
+    function closeModal(modalId) {
+        document.getElementById(modalId).classList.add('hidden');
+        // Restore scrollbar on body
+        document.body.style.overflow = 'auto'; 
+    }
+
+    // Close modal on clicking outside the content
+    window.addEventListener('click', function(event) {
+        document.querySelectorAll('.fixed.inset-0:not(.hidden)').forEach(modal => {
+            if (event.target === modal) {
+                closeModal(modal.id);
+            }
+        });
+    });
+    </script>
 
 </body>
 </html>

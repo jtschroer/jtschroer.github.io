@@ -170,11 +170,37 @@
                     <li>Employees aged 25–35 account for the largest turnover.</li>
                     <li>Low job satisfaction roles show higher attrition risk.</li>
                 </ul>
+                <a href="https://github.com/jtschroer/Tableau_IBM_Employee_Attrition" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                    View Full Project on GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Return to Space Modal -->
+        <div id="SPACE_Modal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
+            <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+                <button onclick="closeModal('SPACE_Modal')" class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">&times;</button>
+                <span class="bg-amber-500 text-gray-900 px-3 py-1 rounded-full font-bold text-sm inline-block mb-3">Power BI</span>
+                <h2 class="text-3xl font-bold mb-2 text-white">Maven Analytics Challenge Return to Space</h2>
+                <p class="text-white mb-4">An analytical look at the history of shuttle launches over the decades, the golden age of space flight, and the leaders paving the way.</p>
+                <img src="projects/rts.png" alt="Dashboard Screenshot" class="rounded-lg mb-6 w-full h-auto border border-amber-300 shadow-lg max-h-[80vh] object-contain">
+                <h3 class="text-lg font-semibold mb-2 text-gray-200">Key Insights</h3>
+                <ul class="list-disc ml-6 mb-6 text-gray-300">
+
+    <li>Winning Team: USA had 1,468 successful missions, followed closely by Russia with 1,416.</li>
+    <li>Top Company: RVSN USSR leads with 1,777 successful launches, significantly ahead of competitors.</li>
+    <li>Golden Era: The 1970s had the highest number of missions (1,012), driven primarily by Russia’s 604 launches.</li>
+    <li>Mission Success: Humanity achieved an overall success rate of 92.7%, maintained steadily since the 1980s.</li>
+    <li>Best Shuttle: Cosmos-3 (11K65M) had the highest number of successful missions; Voskhod was second.</li>
+    <li>Cost Efficiency: Rocket 3 had the lowest cost per mission at $2.5M; Ceres-1 was nearly twice as expensive at $4.9M.</li>
+
+                </ul>
                 <a href="https://github.com/jtschroer/Maven_Challenge_2025_11" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
                     View Full Project on GitHub
                 </a>
             </div>
         </div>
+
 
         <!-- ================= PROJECT CARDS ================= -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
@@ -189,24 +215,27 @@
         <img src="projects/tableau_p01.png" alt="Tableau Visualization" class="rounded-lg mb-4 w-full h-48 object-contain border border-amber-300">
 
         <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
-            <h3 class="text-2xl font-bold text-gray-200 transition duration-300 leading-snug">IBM Employee Attrition Dashboard</h3>
+            <h3 class="text-2xl font-bold text-gray-200 transition duration-300 leading-snug">IBM Employee Attrition</h3>
             <p class="text-gray-400 text-sm line-clamp-3">Identifies high-risk employee segments and key retention drivers using interactive HR data analysis.</p>
         </div>
     </div>
 
-    <!-- Coming Soon Card 1 -->
-    <div class="relative block p-4 rounded-xl bg-gray-800 border border-gray-600/50 opacity-50 cursor-default flex flex-col h-[450px] w-full">
+
+    <!-- Return to Space -->
+    <div onclick="openModal('SPACE_Modal')" class="cursor-pointer block p-4 rounded-xl bg-gray-800 border border-amber-700/50 card-glow flex flex-col h-[450px] w-full">
+        <!-- Badges container -->
         <div class="flex flex-wrap gap-2 mb-3">
             <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">Power BI</span>
         </div>
 
-        <img src="imgs/coming_soon.png" alt="Power BI Dashboard" class="rounded-lg w-full h-48 object-cover border border-gray-500">
+        <img src="projects/rts.png" alt="Tableau Visualization" class="rounded-lg mb-4 w-full h-48 object-contain border border-amber-300">
 
         <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
-            <h3 class="text-2xl font-bold text-gray-500 leading-snug">Enterprise Financial Performance Model</h3>
-            <p class="text-gray-400 text-sm line-clamp-3">High-performance Star Schema modeling and advanced DAX tracking KPIs, YoY variance, and inventory movement.</p>
+            <h3 class="text-2xl font-bold text-gray-200 transition duration-300 leading-snug">Return to Space</h3>
+            <p class="text-gray-400 text-sm line-clamp-3">An analytical look at the history of shuttle launches over the decades, the golden age of space flight, and the leaders paving the way.</p>
         </div>
     </div>
+
 
     <div class="relative block p-4 rounded-xl bg-gray-800 border border-gray-600/50 opacity-50 cursor-default flex flex-col h-[450px] w-full">
         <div class="flex flex-wrap gap-2 mb-3">

@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Tyler Schroer | Data Analyst Portfolio</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JD8HNG1HF4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Basic Config
+      gtag('config', 'G-JD8HNG1HF4');
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <meta name="robots" content="noindex, nofollow, noarchive">
@@ -11,70 +22,56 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-<style>
-    /* Custom styles for the SUCCESS glow effect */
-    .card-glow {
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0 0 10px rgba(251, 191, 36, 0.2); /* Initial subtle amber glow */
-    }
-    .card-glow:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 0 25px rgba(251, 191, 36, 0.6), 0 0 5px rgba(251, 191, 36, 0.4) inset;
-        border-color: #f59e0b; /* Amber border on hover */
-    }
-
-    .skill-card {
-        background-color: #1f2937; /* Gray-800 */
-        border-color: #374151; /* Gray-700 */
-        display: flex; /* Use flexbox for vertical alignment */
-        flex-direction: column; /* Arrange items in a column */
-        justify-content: center; /* Center items vertically */
-        height: 150px; /* Adjust height as needed */
-    }
-</style>
+    <style>
+        .card-glow {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 0 10px rgba(251, 191, 36, 0.2);
+        }
+        .card-glow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(251, 191, 36, 0.6), 0 0 5px rgba(251, 191, 36, 0.4) inset;
+            border-color: #f59e0b;
+        }
+        .skill-card {
+            background-color: #1f2937;
+            border-color: #374151;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 150px;
+        }
+    </style>
 </head>
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JD8HNG1HF4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JD8HNG1HF4');
-</script>
-
-	
 <body class="bg-gray-950 text-gray-200 font-sans">
     
     <section class="py-16 md:py-24 bg-blue-950 border-b-4 border-amber-500">
         <div class="container mx-auto px-6 text-center text-white">
-            
             <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-widest uppercase">
                 James Tyler Schroer
             </h1>
-            
             <p class="text-2xl md:text-3xl font-semibold text-amber-400 mb-6">
                 Data Visualization & Analytics Professional
             </p>
-            
             <p class="text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
                 Transforming complex data into actionable insights and robust, interactive dashboards using Power BI, Tableau, and advanced data engineering techniques.
             </p>
 
             <div class="space-x-8 flex justify-center items-center flex-wrap gap-4">
-                
                 <a href="#projects" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
                     View Featured Projects
                 </a>
                 
-                <a href="https://www.linkedin.com/in/jtschroer" target="_blank" class="text-gray-200 hover:text-amber-400 font-bold transition duration-300 py-3 px-2 flex items-center space-x-2">
+                <a href="https://www.linkedin.com/in/jtschroer" 
+                   onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'LinkedIn'});"
+                   target="_blank" class="text-gray-200 hover:text-amber-400 font-bold transition duration-300 py-3 px-2 flex items-center space-x-2">
                     <i class="fab fa-linkedin text-xl"></i>
                     <span>LinkedIn</span>
                 </a>
 
-                <a href="https://github.com/jtschroer" target="_blank" class="text-gray-200 hover:text-amber-400 font-bold transition duration-300 py-3 px-2 flex items-center space-x-2">
+                <a href="https://github.com/jtschroer" 
+                   onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'GitHub'});"
+                   target="_blank" class="text-gray-200 hover:text-amber-400 font-bold transition duration-300 py-3 px-2 flex items-center space-x-2">
                     <i class="fab fa-github text-xl"></i>
                     <span>GitHub</span>
                 </a>
@@ -85,243 +82,122 @@
     <section id="skills" class="py-16 md:py-24 bg-gray-900 border-b border-gray-800">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 text-white">Tech Stack</h2>
-            
             <div class="flex flex-wrap justify-center gap-4 max-w-7xl mx-auto">
-                
                 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
                     <img src="imgs/icon_pbi.png" alt="Power BI Logo" class="w-12 h-12 mx-auto mb-2">
                     <p class="text-base font-semibold text-gray-200 mt-1">Power BI</p>
                     <p class="text-xs text-amber-400">Modeling & DAX</p>
-                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-                        Built interactive dashboards and KPIs for finance and HR projects.
-                    </span>
+                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">Built interactive dashboards and KPIs.</span>
                 </div>
-
                 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
                     <img src="imgs/icon_tabl.png" alt="Tableau Logo" class="w-12 h-12 mx-auto mb-2">
                     <p class="text-base font-semibold text-gray-200 mt-1">Tableau</p>
-                    <p class="text-xs text-amber-400">Dashboards & Storytelling</p>
-                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-                        Created visual stories and executive dashboards for marketing and sales data.
-                    </span>
+                    <p class="text-xs text-amber-400">Dashboards</p>
                 </div>
-
                 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
                     <img src="imgs/icon_sql.png" alt="SQL Logo" class="w-12 h-12 mx-auto mb-2">
                     <p class="text-base font-semibold text-gray-200 mt-1">SQL</p>
                     <p class="text-xs text-amber-400">ETL & Queries</p>
-                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-                        Optimized complex queries and data pipelines using window functions, CTEs, and indexing.
-                    </span>
                 </div>
-
                 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
                     <img src="imgs/icon_excel.png" alt="Excel Logo" class="w-12 h-12 mx-auto mb-2">
                     <p class="text-base font-semibold text-gray-200 mt-1">Excel</p>
-                    <p class="text-xs text-amber-400">Analysis & Pivot Tables</p>
-                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-                        Built automated financial models and dashboards with formulas and pivot tables.
-                    </span>
+                    <p class="text-xs text-amber-400">Analysis</p>
                 </div>
-
                 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
                     <img src="imgs/icon_vba.png" alt="VBA Logo" class="w-12 h-12 mx-auto mb-2">
                     <p class="text-base font-semibold text-gray-200 mt-1">VBA</p>
-                    <p class="text-xs text-amber-400">Macros & Automation</p>
-                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-                        Developed macros, automated repetitive tasks, and built interactive forms.
-                    </span>
+                    <p class="text-xs text-amber-400">Automation</p>
                 </div>
-
                 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
                     <img src="imgs/icon_python.png" alt="Python Logo" class="w-12 h-12 mx-auto mb-2">
                     <p class="text-base font-semibold text-gray-200 mt-1">Python</p>
-                    <p class="text-xs text-amber-400">Data & Automation</p>
-                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-                        Automated data cleaning, transformation, and reporting using pandas and scripts.
-                    </span>
+                    <p class="text-xs text-amber-400">Data Science</p>
                 </div>
-
                 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
                     <img src="imgs/icon_azure.png" alt="Azure Logo" class="w-12 h-12 mx-auto mb-2">
                     <p class="text-base font-semibold text-gray-200 mt-1">Azure</p>
-                    <p class="text-xs text-amber-400">Cloud & Data</p>
-                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-                        Deployed data pipelines and dashboards in Synapse, Data Lake, and other Azure services.
-                    </span>
+                    <p class="text-xs text-amber-400">Cloud Data</p>
                 </div>
-
                 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl bg-gray-800 skill-card card-glow flex flex-col items-center relative group">
                     <img src="imgs/icon_pa.png" alt="Power Automate Logo" class="w-12 h-12 mx-auto mb-2">
-                    <p class="text-base font-semibold text-gray-200 mt-1">Power Automate</p>
-                    <p class="text-xs text-amber-400">RPA & Workflows</p>
-                    <span class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 w-max bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
-                        Built automated workflows and robotic process automation for business processes.
-                    </span>
+                    <p class="text-base font-semibold text-gray-200 mt-1">Automate</p>
+                    <p class="text-xs text-amber-400">Workflows</p>
                 </div>
             </div>
         </div>
     </section>
 
-<section id="projects" class="py-16 md:py-24 bg-gray-950">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl font-bold text-center mb-12 text-white">Featured Projects</h2>
+    <section id="projects" class="py-16 md:py-24 bg-gray-950">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">Featured Projects</h2>
 
-        <!-- ================= MODALS ================= -->
-        <!-- IBM Employee Attrition Dashboard Modal -->
-        <div id="ibmModal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
-            <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
-                <button onclick="closeModal('ibmModal')" class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">&times;</button>
-                <span class="bg-amber-500 text-gray-900 px-3 py-1 rounded-full font-bold text-sm inline-block mb-3">Tableau</span>
-                <h2 class="text-3xl font-bold mb-2 text-white">IBM Employee Attrition Dashboard</h2>
-                <p class="text-white mb-4">Identifies high-risk employee segments and key retention drivers using interactive HR data analysis.</p>
-                <img src="projects/tableau_p01.png" alt="Dashboard Screenshot" class="rounded-lg mb-6 w-full h-auto border border-amber-300 shadow-lg max-h-[80vh] object-contain">
-                <h3 class="text-lg font-semibold mb-2 text-gray-200">Key Insights</h3>
-                <ul class="list-disc ml-6 mb-6 text-gray-300">
-                    <li>R&D department has the highest attrition (<span class="font-bold text-white">56%</span>).</li>
-                    <li>Employees aged 25–35 account for the largest turnover.</li>
-                    <li>Low job satisfaction roles show higher attrition risk.</li>
-                </ul>
-                <a href="https://github.com/jtschroer/Tableau_IBM_Employee_Attrition" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    View Full Project on GitHub
-                </a>
+            <div id="ibmModal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
+                <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+                    <button onclick="closeModal('ibmModal')" class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">&times;</button>
+                    <span class="bg-amber-500 text-gray-900 px-3 py-1 rounded-full font-bold text-sm inline-block mb-3">Tableau</span>
+                    <h2 class="text-3xl font-bold mb-2 text-white">IBM Employee Attrition Dashboard</h2>
+                    <img src="projects/tableau_p01.png" alt="Dashboard" class="rounded-lg mb-6 w-full h-auto border border-amber-300 shadow-lg">
+                    <a href="https://github.com/jtschroer/Tableau_IBM_Employee_Attrition" 
+                       onclick="gtag('event', 'project_github_click', {'project_name': 'IBM Attrition'});"
+                       target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg">View GitHub</a>
+                </div>
+            </div>
+
+            <div id="SPACE_Modal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
+                <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+                    <button onclick="closeModal('SPACE_Modal')" class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">&times;</button>
+                    <span class="bg-amber-500 text-gray-900 px-3 py-1 rounded-full font-bold text-sm inline-block mb-3">Power BI</span>
+                    <h2 class="text-3xl font-bold mb-2 text-white">Maven Return to Space</h2>
+                    <img src="projects/rts.png" alt="Space" class="rounded-lg mb-6 w-full h-auto border border-amber-300 shadow-lg">
+                    <a href="https://github.com/jtschroer/Maven_Challenge_2025_11" 
+                       onclick="gtag('event', 'project_github_click', {'project_name': 'Return to Space'});"
+                       target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg">View GitHub</a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                <div onclick="openModal('ibmModal')" class="cursor-pointer block p-4 rounded-xl bg-gray-800 border border-amber-700/50 card-glow flex flex-col h-[450px]">
+                    <span class="bg-amber-500 text-gray-900 w-fit px-2 py-0.5 rounded-full font-bold text-xs mb-3">Tableau</span>
+                    <img src="projects/tableau_p01.png" class="rounded-lg mb-4 w-full h-48 object-contain border border-amber-300">
+                    <h3 class="text-2xl font-bold text-gray-200">IBM Employee Attrition</h3>
+                </div>
+
+                <div onclick="openModal('SPACE_Modal')" class="cursor-pointer block p-4 rounded-xl bg-gray-800 border border-amber-700/50 card-glow flex flex-col h-[450px]">
+                    <span class="bg-amber-500 text-gray-900 w-fit px-2 py-0.5 rounded-full font-bold text-xs mb-3">Power BI</span>
+                    <img src="projects/rts.png" class="rounded-lg mb-4 w-full h-48 object-contain border border-amber-300">
+                    <h3 class="text-2xl font-bold text-gray-200">Return to Space</h3>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Return to Space Modal -->
-        <div id="SPACE_Modal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
-            <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
-                <button onclick="closeModal('SPACE_Modal')" class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">&times;</button>
-                <span class="bg-amber-500 text-gray-900 px-3 py-1 rounded-full font-bold text-sm inline-block mb-3">Power BI</span>
-                <h2 class="text-3xl font-bold mb-2 text-white">Maven Analytics Challenge Return to Space</h2>
-                <p class="text-white mb-4">An analytical look at the history of shuttle launches over the decades, the golden age of space flight, and the leaders paving the way.</p>
-                <img src="projects/rts.png" alt="Dashboard Screenshot" class="rounded-lg mb-6 w-full h-auto border border-amber-300 shadow-lg max-h-[80vh] object-contain">
-                <h3 class="text-lg font-semibold mb-2 text-gray-200">Key Insights</h3>
-                <ul class="list-disc ml-6 mb-6 text-gray-300">
-
-    <li>Winning Team: USA had 1,468 successful missions, followed closely by Russia with 1,416.</li>
-    <li>Top Company: RVSN USSR leads with 1,777 successful launches, significantly ahead of competitors.</li>
-    <li>Golden Era: The 1970s had the highest number of missions (1,012), driven primarily by Russia’s 604 launches.</li>
-    <li>Mission Success: Humanity achieved an overall success rate of 92.7%, maintained steadily since the 1980s.</li>
-    <li>Best Shuttle: Cosmos-3 (11K65M) had the highest number of successful missions; Voskhod was second.</li>
-    <li>Cost Efficiency: Rocket 3 had the lowest cost per mission at $2.5M; Ceres-1 was nearly twice as expensive at $4.9M.</li>
-
-                </ul>
-                <a href="https://github.com/jtschroer/Maven_Challenge_2025_11" target="_blank" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    View Full Project on GitHub
-                </a>
-            </div>
-        </div>
-
-
-        <!-- ================= PROJECT CARDS ================= -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-
-    <!-- IBM Employee Attrition Dashboard Card -->
-    <div onclick="openModal('ibmModal')" class="cursor-pointer block p-4 rounded-xl bg-gray-800 border border-amber-700/50 card-glow flex flex-col h-[450px] w-full">
-        <!-- Badges container -->
-        <div class="flex flex-wrap gap-2 mb-3">
-            <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">Tableau</span>
-        </div>
-
-        <img src="projects/tableau_p01.png" alt="Tableau Visualization" class="rounded-lg mb-4 w-full h-48 object-contain border border-amber-300">
-
-        <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
-            <h3 class="text-2xl font-bold text-gray-200 transition duration-300 leading-snug">IBM Employee Attrition</h3>
-            <p class="text-gray-400 text-sm line-clamp-3">Identifies high-risk employee segments and key retention drivers using interactive HR data analysis.</p>
-        </div>
-    </div>
-
-
-    <!-- Return to Space -->
-    <div onclick="openModal('SPACE_Modal')" class="cursor-pointer block p-4 rounded-xl bg-gray-800 border border-amber-700/50 card-glow flex flex-col h-[450px] w-full">
-        <!-- Badges container -->
-        <div class="flex flex-wrap gap-2 mb-3">
-            <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">Power BI</span>
-        </div>
-
-        <img src="projects/rts.png" alt="Tableau Visualization" class="rounded-lg mb-4 w-full h-48 object-contain border border-amber-300">
-
-        <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
-            <h3 class="text-2xl font-bold text-gray-200 transition duration-300 leading-snug">Return to Space</h3>
-            <p class="text-gray-400 text-sm line-clamp-3">An analytical look at the history of shuttle launches over the decades, the golden age of space flight, and the leaders paving the way.</p>
-        </div>
-    </div>
-
-
-    <div class="relative block p-4 rounded-xl bg-gray-800 border border-gray-600/50 opacity-50 cursor-default flex flex-col h-[450px] w-full">
-        <div class="flex flex-wrap gap-2 mb-3">
-            <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">Python</span>
-	    <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">SQL</span>
-        </div>
-
-        <img src="imgs/coming_soon.png" alt="SQL Optimization" class="rounded-lg w-full h-48 object-cover border border-gray-500">
-
-        <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
-            <h3 class="text-2xl font-bold text-gray-500 leading-snug">Data Pipeline Optimization Case Study</h3>
-            <p class="text-gray-400 text-sm line-clamp-3">Performance tuning using SQL Window Functions and CTEs, integrated with Python ETL for validation and automation.</p>
-        </div>
-    </div>
-
-    <!-- Coming Soon Card
-    <div class="relative block p-4 rounded-xl bg-gray-800 border border-gray-600/50 opacity-50 cursor-default flex flex-col h-[450px] w-full">
-        <div class="flex flex-wrap gap-2 mb-3">
-            <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">Python</span>
-	    <span class="bg-amber-500 text-gray-900 px-2 py-0.5 rounded-full font-bold text-xs">SQL</span>
-        </div>
-
-        <img src="imgs/coming_soon.png" alt="SQL Optimization" class="rounded-lg w-full h-48 object-cover border border-gray-500">
-
-        <div class="flex-1 flex flex-col gap-2 overflow-hidden mt-2">
-            <h3 class="text-2xl font-bold text-gray-500 leading-snug">Data Pipeline Optimization Case Study</h3>
-            <p class="text-gray-400 text-sm line-clamp-3">Performance tuning using SQL Window Functions and CTEs, integrated with Python ETL for validation and automation.</p>
-        </div>
-    </div>
-    Coming Soon Card -->
-
-
-</div>
-
-
-
-        <!-- Info text -->
-        <div class="text-center mt-8">
-            <p class="text-lg text-gray-400">Click a project to see detailed descriptions, insights, and static screenshots.</p>
-        </div>
-    </div>
-</section>
-
-
-    <footer class="bg-gray-800 border-t-4 border-amber-500 py-8">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-gray-400 text-sm">© 2025 James Tyler Schroer. All rights reserved.</p>
-            <p class="text-gray-400 text-sm mt-2">Built with HTML & Tailwind CSS.</p>
-        </div>
+    <footer class="bg-gray-800 border-t-4 border-amber-500 py-8 text-center">
+        <p class="text-gray-400 text-sm">© 2025 James Tyler Schroer. All rights reserved.</p>
     </footer>
 
     <script>
-    // --- Modal Functions ---
     function openModal(modalId) {
         document.getElementById(modalId).classList.remove('hidden');
-        // Hide scrollbar on body when modal is open (Prevents scrolling background)
         document.body.style.overflow = 'hidden'; 
+        
+        // Tracking the event
+        gtag('event', 'view_project', {
+            'project_name': modalId,
+            'event_category': 'Engagement'
+        });
     }
     
     function closeModal(modalId) {
         document.getElementById(modalId).classList.add('hidden');
-        // Restore scrollbar on body
         document.body.style.overflow = 'auto'; 
     }
 
-    // Close modal on clicking outside the content
     window.addEventListener('click', function(event) {
         document.querySelectorAll('.fixed.inset-0:not(.hidden)').forEach(modal => {
-            if (event.target === modal) {
-                closeModal(modal.id);
-            }
+            if (event.target === modal) closeModal(modal.id);
         });
     });
     </script>
-
 </body>
 </html>

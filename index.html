@@ -38,6 +38,20 @@
   flex-direction:column;
   justify-content:center;
   height:150px;
+  position:relative;
+  overflow:hidden; /* keep tooltip and content contained inside the card frame */
+}
+
+/* Remove default button styles for cards used as buttons but allow Tailwind border/background classes to apply */
+.unstyled-button {
+  display: block;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  width: 100%;
 }
 </style>
 </head>
@@ -70,15 +84,17 @@ View Featured Projects
 <a href="https://www.linkedin.com/in/jtschroer"
    onclick="gtag('event','click',{event_category:'Social',event_label:'LinkedIn'});"
    target="_blank"
+   rel="noopener noreferrer"
    class="flex items-center gap-2 font-bold hover:text-amber-400">
-<i class="fab fa-linkedin"></i> LinkedIn
+<i class="fab fa-linkedin" aria-hidden="true"></i> <span class="sr-only">LinkedIn</span><span aria-hidden="true"> LinkedIn</span>
 </a>
 
 <a href="https://github.com/jtschroer"
    onclick="gtag('event','click',{event_category:'Social',event_label:'GitHub'});"
    target="_blank"
+   rel="noopener noreferrer"
    class="flex items-center gap-2 font-bold hover:text-amber-400">
-<i class="fab fa-github"></i> GitHub
+<i class="fab fa-github" aria-hidden="true"></i> <span class="sr-only">GitHub</span><span aria-hidden="true"> GitHub</span>
 </a>
 
 </div>
@@ -93,73 +109,73 @@ View Featured Projects
 <div class="flex flex-wrap justify-center gap-4 max-w-7xl mx-auto">
 
 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl skill-card card-glow relative group">
-<img src="imgs/icon_pbi.png" class="w-12 h-12 mx-auto mb-2">
+<img src="imgs/icon_pbi.png" alt="Power BI icon" class="w-12 h-12 mx-auto mb-2">
 <p class="font-semibold">Power BI</p>
 <p class="text-xs text-amber-400">Modeling & DAX</p>
-<span class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 text-center w-[90%]">
+<span class="absolute bottom-2 left-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none text-center" aria-hidden="true">
 Built end-to-end dashboards for 500+ managers tracking 4,000 employees.
 </span>
 </div>
 
 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl skill-card card-glow relative group">
-<img src="imgs/icon_tabl.png" class="w-12 h-12 mx-auto mb-2">
+<img src="imgs/icon_tabl.png" alt="Tableau icon" class="w-12 h-12 mx-auto mb-2">
 <p class="font-semibold">Tableau</p>
 <p class="text-xs text-amber-400">Dashboards & Storytelling</p>
-<span class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 text-center w-[90%]">
+<span class="absolute bottom-2 left-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none text-center" aria-hidden="true">
 Executive dashboards and narrative-driven visual analysis.
 </span>
 </div>
 
 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl skill-card card-glow relative group">
-<img src="imgs/icon_sql.png" class="w-12 h-12 mx-auto mb-2">
+<img src="imgs/icon_sql.png" alt="SQL icon" class="w-12 h-12 mx-auto mb-2">
 <p class="font-semibold">SQL</p>
 <p class="text-xs text-amber-400">ETL & Queries</p>
-<span class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 text-center w-[90%]">
+<span class="absolute bottom-2 left-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none text-center" aria-hidden="true">
 Used DBVisualizer for ad-hoc and complex multi-table reporting.
 </span>
 </div>
 
 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl skill-card card-glow relative group">
-<img src="imgs/icon_excel.png" class="w-12 h-12 mx-auto mb-2">
+<img src="imgs/icon_excel.png" alt="Excel icon" class="w-12 h-12 mx-auto mb-2">
 <p class="font-semibold">Excel</p>
 <p class="text-xs text-amber-400">Analysis & Models</p>
-<span class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 text-center w-[90%]">
+<span class="absolute bottom-2 left-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none text-center" aria-hidden="true">
 20+ years of experience in data cleaning, formatting, and complex modeling.
 </span>
 </div>
 
 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl skill-card card-glow relative group">
-<img src="imgs/icon_vba.png" class="w-12 h-12 mx-auto mb-2">
+<img src="imgs/icon_vba.png" alt="VBA icon" class="w-12 h-12 mx-auto mb-2">
 <p class="font-semibold">VBA</p>
 <p class="text-xs text-amber-400">Automation</p>
-<span class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 text-center w-[90%]">
+<span class="absolute bottom-2 left-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none text-center" aria-hidden="true">
 Reduced weekly reporting tasks to under an hour through automation.
 </span>
 </div>
 
 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl skill-card card-glow relative group">
-<img src="imgs/icon_python.png" class="w-12 h-12 mx-auto mb-2">
+<img src="imgs/icon_python.png" alt="Python icon" class="w-12 h-12 mx-auto mb-2">
 <p class="font-semibold">Python</p>
 <p class="text-xs text-amber-400">Data & Automation</p>
-<span class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 text-center w-[90%]">
+<span class="absolute bottom-2 left-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none text-center" aria-hidden="true">
 Used pandas to optimize Power BI refresh times by over 90%.
 </span>
 </div>
 
 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl skill-card card-glow relative group">
-<img src="imgs/icon_azure.png" class="w-12 h-12 mx-auto mb-2">
+<img src="imgs/icon_azure.png" alt="Azure / Fabric icon" class="w-12 h-12 mx-auto mb-2">
 <p class="font-semibold">Azure / Fabric</p>
 <p class="text-xs text-amber-400">Cloud Data</p>
-<span class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 text-center w-[90%]">
+<span class="absolute bottom-2 left-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none text-center" aria-hidden="true">
 Managing cloud-based data pipelines within the Fabric workspace.
 </span>
 </div>
 
 <div class="p-3 w-36 text-center border border-amber-500/50 rounded-xl skill-card card-glow relative group">
-<img src="imgs/icon_pa.png" class="w-12 h-12 mx-auto mb-2">
+<img src="imgs/icon_pa.png" alt="Power Automate icon" class="w-12 h-12 mx-auto mb-2">
 <p class="font-semibold">Power Automate</p>
 <p class="text-xs text-amber-400">RPA & Workflows</p>
-<span class="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10 text-center w-[90%]">
+<span class="absolute bottom-2 left-2 right-2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none text-center" aria-hidden="true">
 Automated file management and dashboard refresh notifications.
 </span>
 </div>
@@ -174,13 +190,13 @@ Automated file management and dashboard refresh notifications.
 <h2 class="text-4xl font-bold text-center mb-12 text-white">Featured Projects</h2>
 
 <!-- IBM MODAL -->
-<div id="ibmModal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
+<div id="ibmModal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto" role="dialog" aria-modal="true" aria-labelledby="ibmModalTitle" aria-describedby="ibmModalDesc" tabindex="-1" aria-hidden="true">
 <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-5xl">
-<button onclick="closeModal('ibmModal')" class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">&times;</button>
+<button onclick="closeModal('ibmModal')" class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400" aria-label="Close IBM modal">&times;</button>
 <span class="bg-amber-500 text-gray-900 px-3 py-1 rounded-full font-bold text-sm inline-block mb-3">Tableau</span>
-<h2 class="text-3xl font-bold mb-2 text-white">IBM Employee Attrition Dashboard</h2>
-<p class="mb-4">Identifies high-risk employee segments and key retention drivers using interactive HR data analysis.</p>
-<img src="projects/tableau_p01.png" class="rounded-lg mb-6 border border-amber-300">
+<h2 id="ibmModalTitle" class="text-3xl font-bold mb-2 text-white">IBM Employee Attrition Dashboard</h2>
+<p id="ibmModalDesc" class="mb-4">Identifies high-risk employee segments and key retention drivers using interactive HR data analysis.</p>
+<img src="projects/tableau_p01.png" alt="IBM Employee Attrition dashboard screenshot" loading="lazy" class="rounded-lg mb-6 border border-amber-300">
 <ul class="list-disc ml-6 mb-6">
 <li>R&amp;D department has the highest attrition (56%).</li>
 <li>Employees aged 25–35 account for the largest turnover.</li>
@@ -189,17 +205,19 @@ Automated file management and dashboard refresh notifications.
 <a href="https://github.com/jtschroer/Tableau_IBM_Employee_Attrition"
    onclick="gtag('event','project_github_click',{project_name:'IBM Attrition'});"
    target="_blank"
+   rel="noopener noreferrer"
    class="bg-amber-500 px-6 py-3 rounded-lg font-bold text-gray-900">
 View Full Project on GitHub
 </a>
 </div>
 </div>
 
-<div id="SPACE_Modal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
+<div id="SPACE_Modal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto" role="dialog" aria-modal="true" aria-labelledby="spaceModalTitle" aria-describedby="spaceModalDesc" tabindex="-1" aria-hidden="true">
   <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
 
     <button onclick="closeModal('SPACE_Modal')" 
-            class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">
+            class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400"
+            aria-label="Close Return to Space modal">
       &times;
     </button>
 
@@ -207,22 +225,20 @@ View Full Project on GitHub
       Power BI
     </span>
 
-    <h2 class="text-3xl font-bold mb-2 text-white">
+    <h2 id="spaceModalTitle" class="text-3xl font-bold mb-2 text-white">
       Maven Analytics — Return to Space
     </h2>
 
-    <!-- ONE-SENTENCE SUMMARY (matches IBM placement) -->
-    <p class="mb-4 text-gray-300">
+    <p id="spaceModalDesc" class="mb-4 text-gray-300">
       An interactive Power BI dashboard analyzing global spaceflight missions to uncover
       long-term launch trends, mission success rates, and cost efficiency.
     </p>
 
-    <!-- IMAGE -->
     <img src="projects/rts.png"
-         alt="Return to Space Dashboard"
+         alt="Return to Space dashboard screenshot"
+         loading="lazy"
          class="rounded-lg mb-6 w-full h-auto border border-amber-300 shadow-lg">
 
-    <!-- BULLET INSIGHTS (matches IBM) -->
     <ul class="list-disc ml-6 mb-6">
       <li>The United States leads with <strong>1,468</strong> successful missions, narrowly ahead of Russia.</li>
       <li>The <strong>1970s</strong> were the most active decade with <strong>1,012</strong> total missions.</li>
@@ -233,6 +249,7 @@ View Full Project on GitHub
     <a href="https://github.com/jtschroer/Maven_Challenge_2025_11"
        onclick="gtag('event','project_github_click',{project_name:'Return to Space'});"
        target="_blank"
+       rel="noopener noreferrer"
        class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg">
       View GitHub
     </a>
@@ -244,15 +261,16 @@ View Full Project on GitHub
 <!-- PROJECT CARDS -->
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-4xl mx-auto">
 
-<div onclick="openModal('ibmModal')" class="cursor-pointer p-4 bg-gray-800 rounded-xl border border-amber-700/50 card-glow">
-<img src="projects/tableau_p01.png" class="rounded-lg mb-4 h-48 w-full object-contain">
+<!-- Changed these from div to button for keyboard accessibility; use aria-controls and aria-haspopup -->
+<button type="button" onclick="openModal('ibmModal', this)" class="unstyled-button cursor-pointer p-4 bg-gray-800 rounded-xl border border-amber-700/50 card-glow" aria-controls="ibmModal" aria-haspopup="dialog" aria-label="Open IBM Employee Attrition project">
+<img src="projects/tableau_p01.png" alt="IBM Employee Attrition thumbnail" loading="lazy" class="rounded-lg mb-4 h-48 w-full object-contain">
 <h3 class="text-2xl font-bold">IBM Employee Attrition</h3>
-</div>
+</button>
 
-<div onclick="openModal('SPACE_Modal')" class="cursor-pointer p-4 bg-gray-800 rounded-xl border border-amber-700/50 card-glow">
-<img src="projects/rts.png" class="rounded-lg mb-4 h-48 w-full object-contain">
+<button type="button" onclick="openModal('SPACE_Modal', this)" class="unstyled-button cursor-pointer p-4 bg-gray-800 rounded-xl border border-amber-700/50 card-glow" aria-controls="SPACE_Modal" aria-haspopup="dialog" aria-label="Open Return to Space project">
+<img src="projects/rts.png" alt="Return to Space thumbnail" loading="lazy" class="rounded-lg mb-4 h-48 w-full object-contain">
 <h3 class="text-2xl font-bold">Return to Space</h3>
-</div>
+</button>
 
 </div>
 </div>
@@ -264,19 +282,100 @@ View Full Project on GitHub
 </footer>
 
 <script>
-function openModal(id){
-document.getElementById(id).classList.remove('hidden');
-document.body.style.overflow='hidden';
-gtag('event','view_project',{project_name:id});
+/* Modal + accessibility improvements:
+   - openModal now accepts the triggering element to store and restore focus
+   - Adds focus trapping inside modal while open
+   - Updates aria-hidden on modals
+   - Closes modals on Escape
+*/
+
+function getFocusableElements(container) {
+  return container.querySelectorAll('a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])');
 }
-function closeModal(id){
-document.getElementById(id).classList.add('hidden');
-document.body.style.overflow='auto';
+
+let activeModal = null;
+let lastFocusedElement = null;
+
+function openModal(id, triggerEl) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  // store trigger
+  lastFocusedElement = triggerEl || document.activeElement;
+  modal.classList.remove('hidden');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  gtag && gtag('event','view_project',{project_name:id});
+
+  // focus management: focus first focusable element in modal (close button)
+  const focusables = getFocusableElements(modal);
+  if (focusables.length) {
+    focusables[0].focus();
+  } else {
+    modal.focus();
+  }
+
+  // setup a focus trap
+  activeModal = modal;
+  document.addEventListener('keydown', trapTabKey);
 }
-window.addEventListener('click',e=>{
-document.querySelectorAll('.fixed.inset-0:not(.hidden)').forEach(m=>{
-if(e.target===m)closeModal(m.id);
+
+function closeModal(id) {
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.add('hidden');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = 'auto';
+
+  // remove focus trap
+  document.removeEventListener('keydown', trapTabKey);
+  activeModal = null;
+
+  // restore focus to previously focused element if available
+  if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+    lastFocusedElement.focus();
+    lastFocusedElement = null;
+  }
+}
+
+function trapTabKey(e) {
+  if (!activeModal) return;
+  if (e.key === 'Tab') {
+    const focusables = Array.from(getFocusableElements(activeModal));
+    if (focusables.length === 0) {
+      e.preventDefault();
+      return;
+    }
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey) { // shift + tab
+      if (document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      }
+    } else { // tab
+      if (document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  } else if (e.key === 'Escape') {
+    // close all open modals on Escape
+    document.querySelectorAll('.fixed.inset-0:not(.hidden)').forEach(m => closeModal(m.id));
+  }
+}
+
+// existing click-to-outside-to-close behavior (keeps referencing hidden class)
+window.addEventListener('click', e => {
+  document.querySelectorAll('.fixed.inset-0:not(.hidden)').forEach(m => {
+    if (e.target === m) closeModal(m.id);
+  });
 });
+
+// A safe global keydown handler to close modals on Escape (in case trap wasn't attached)
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.fixed.inset-0:not(.hidden)').forEach(m => closeModal(m.id));
+  }
 });
 </script>
 

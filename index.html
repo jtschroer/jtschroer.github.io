@@ -176,8 +176,93 @@ Business process automation and alerts.
 </div>
 </section>
 
-<!-- PROJECTS (modals + cards retained as-is from your GA version, content preserved) -->
-<!-- Your existing project modals and cards are already correct structurally -->
+<!-- IBM Employee Attrition Dashboard Modal -->
+<div id="ibmModal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
+  <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+
+    <button onclick="closeModal('ibmModal')" 
+            class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">
+      &times;
+    </button>
+
+    <span class="bg-amber-500 text-gray-900 px-3 py-1 rounded-full font-bold text-sm inline-block mb-3">
+      Tableau
+    </span>
+
+    <h2 class="text-3xl font-bold mb-2 text-white">
+      IBM Employee Attrition Dashboard
+    </h2>
+
+    <p class="text-white mb-4">
+      Identifies high-risk employee segments and key retention drivers using interactive HR data analysis.
+    </p>
+
+    <img src="projects/tableau_p01.png"
+         alt="IBM Employee Attrition Dashboard Screenshot"
+         class="rounded-lg mb-6 w-full h-auto border border-amber-300 shadow-lg max-h-[80vh] object-contain">
+
+    <h3 class="text-lg font-semibold mb-2 text-gray-200">Key Insights</h3>
+    <ul class="list-disc ml-6 mb-6 text-gray-300">
+      <li>R&amp;D department has the highest attrition (<strong class="text-white">56%</strong>).</li>
+      <li>Employees aged <strong class="text-white">25–35</strong> account for the largest turnover.</li>
+      <li>Roles with low job satisfaction show significantly higher attrition risk.</li>
+    </ul>
+
+    <a href="https://github.com/jtschroer/Tableau_IBM_Employee_Attrition"
+       onclick="gtag('event','project_github_click',{project_name:'IBM Attrition'});"
+       target="_blank"
+       class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg transition">
+      View Full Project on GitHub
+    </a>
+
+  </div>
+</div>
+
+<!-- Return to Space Modal -->
+<div id="SPACE_Modal" class="fixed inset-0 bg-gray-900 bg-opacity-95 hidden z-50 overflow-auto">
+  <div class="relative mx-auto my-16 bg-gray-800 p-6 rounded-xl shadow-2xl text-gray-200 max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+
+    <button onclick="closeModal('SPACE_Modal')" 
+            class="absolute top-4 right-4 text-2xl font-bold hover:text-amber-400">
+      &times;
+    </button>
+
+    <span class="bg-amber-500 text-gray-900 px-3 py-1 rounded-full font-bold text-sm inline-block mb-3">
+      Power BI
+    </span>
+
+    <h2 class="text-3xl font-bold mb-2 text-white">
+      Maven Analytics Challenge — Return to Space
+    </h2>
+
+    <p class="text-white mb-4">
+      An analytical look at the history of shuttle launches, the golden age of space flight, and the organizations leading modern missions.
+    </p>
+
+    <img src="projects/rts.png"
+         alt="Return to Space Dashboard Screenshot"
+         class="rounded-lg mb-6 w-full h-auto border border-amber-300 shadow-lg max-h-[80vh] object-contain">
+
+    <h3 class="text-lg font-semibold mb-2 text-gray-200">Key Insights</h3>
+    <ul class="list-disc ml-6 mb-6 text-gray-300">
+      <li><strong class="text-white">USA</strong> led with 1,468 successful missions, narrowly ahead of Russia (1,416).</li>
+      <li><strong class="text-white">RVSN USSR</strong> was the most successful organization with 1,777 launches.</li>
+      <li>The <strong class="text-white">1970s</strong> marked the golden era with 1,012 missions.</li>
+      <li>Overall mission success rate stabilized at <strong class="text-white">92.7%</strong> since the 1980s.</li>
+      <li>Most reliable vehicle: <strong class="text-white">Cosmos-3 (11K65M)</strong>.</li>
+      <li>Lowest cost per mission: <strong class="text-white">$2.5M</strong> (Rocket 3).</li>
+    </ul>
+
+    <a href="https://github.com/jtschroer/Maven_Challenge_2025_11"
+       onclick="gtag('event','project_github_click',{project_name:'Return to Space'});"
+       target="_blank"
+       class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-6 rounded-lg shadow-lg transition">
+      View Full Project on GitHub
+    </a>
+
+  </div>
+</div>
+
 
 <footer class="bg-gray-800 border-t-4 border-amber-500 py-8 text-center">
 <p class="text-gray-400 text-sm">© 2025 James Tyler Schroer. All rights reserved.</p>
